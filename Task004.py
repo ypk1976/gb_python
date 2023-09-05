@@ -4,9 +4,8 @@
 # количество журавликов, а Катя сделала в два раза больше журавликов,
 # чем Петя и Сережа вместе?
 
-S = int(input("How many paper cranes did children make? "))
-boy = S/6
-katya = boy * 4
-print(f"Each boy created {int(boy)} cranes")
-print(f"Katya created {int(katya)} cranes")
+n = 120
+b = n/6
+k = b * 4
+print(f"{int(b)} {int(k)} {int(b)}")
 
