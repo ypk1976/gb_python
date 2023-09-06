@@ -10,9 +10,8 @@ def find_numbers(S, P):
             if X + Y == S:
                 return X, Y
 
-# Пример использования
-S = 10  # Сумма чисел
-P = 16  # Произведение чисел
+S = 10
+P = 16
 X, Y = find_numbers(S, P)
-print("Задуманные числа:", X, Y)
+print("Петя задумал:", X, Y)
 
