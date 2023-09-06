@@ -15,26 +15,26 @@ def find_longest_sequence(numbers):
     current_sequence = [numbers[0]]
     
     for i in range(1, len(numbers)):
-        if numbers[i] > numbers[i-1]:  # Если текущее число больше предыдущего, продолжаем последовательность
+        if numbers[i] > numbers[i-1]:
             current_length += 1
             current_sequence.append(numbers[i])
         else:
-            if current_length > max_length:  # Если текущая последовательность длиннее максимальной, обновляем значения
+            if current_length > max_length:
                 max_length = current_length
                 max_sequence = current_sequence.copy()
                 final_result = [max_sequence[0],(max_sequence[len(max_sequence)-1])]
             
-            current_length = 1  # Сбрасываем длину и список текущей последовательности
+            current_length = 1
             current_sequence = [numbers[i]]
     
-    if current_length > max_length:  # Проверка для последней последовательности в списке
+    if current_length > max_length:
         max_length = current_length
         max_sequence = current_sequence.copy()
         final_result = [max_sequence[0],(max_sequence[len(max_sequence)-1])]
     
     return final_result
 
-numbers = [1, 5, 2, 3, 4, 6, 1, 7]  # Пример входного списка чисел
+numbers = [1, 5, 2, 3, 4, 6, 1, 7]
 longest_sequence = find_longest_sequence(numbers)
 print(f"{numbers} => {longest_sequence}")
 
