@@ -14,4 +14,4 @@ def count_repeats(list_1,k):
 list_1 = [1, 1, 3, 4, 5]
 k = 1
 result = count_repeats(list_1,k)
-print(f"Число k встречается {result} раз")
+print(result)

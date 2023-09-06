@@ -9,6 +9,5 @@ def powers_of_two(N):
         k += 1
         power_of_two = 2 ** k
 
-# Пример использования
-N = 20  # Максимальное число
+N = 20
 powers_of_two(N)

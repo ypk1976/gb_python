@@ -15,5 +15,5 @@ def negafibonacci(n):
 
 k = int(input("Введите число k: "))
 
-fibonacci_list = [negafibonacci(i)*-1 for i in range(-abs(k), abs(k) + 1)]
+fibonacci_list = [negafibonacci(i) for i in range(-abs(k), abs(k) + 1)]
 print("Список чисел Фибоначчи (включая отрицательные индексы):", fibonacci_list)

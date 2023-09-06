@@ -48,7 +48,6 @@ def calculate_score(word):
 
     return score
 
-# Ввод слова от пользователя и вывод его стоимости
 k = 'ноутбук'
 word = k
 score = calculate_score(word)

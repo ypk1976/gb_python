@@ -11,19 +11,14 @@ def berry_harvest(a):
     n = len(a)
     max_berries = 0
 
-    # Перебираем каждый куст
     for i in range(n):
-        # Вычисляем максимальное количество ягод с текущего куста
         berries = a[i] + a[(i-1)%n] + a[(i+1)%n]
         
-        # Обновляем значение максимального количества ягод
         max_berries = max(max_berries, berries)
 
     return max_berries
 
-# Ввод урожайности грядки
 a = list(map(int, input("Введите урожайность грядки черники: ").split()))
 
-# Нахождение максимального количества ягод
 result = berry_harvest(a)
 print("Максимальное количество ягод, которое может собрать собирающий модуль:", result)
