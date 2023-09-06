@@ -4,7 +4,6 @@
 # 89,126 -> 5
 # 0,001->4
 
-'''
 def count_digits(number):
     number_str = str(number)  # Преобразуем число в строку
     if '.' in number_str:  # Проверяем, является ли число дробным
@@ -17,4 +16,3 @@ def count_digits(number):
 number = float(input("Введите число: "))  # Пример ввода числа с клавиатуры
 digit_count = count_digits(number)
 print("Количество цифр в числе:", digit_count)
-'''
