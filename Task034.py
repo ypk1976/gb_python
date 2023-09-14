@@ -9,13 +9,13 @@
 #     **Вывод:** Парам пам-пам 
 
 def check_rhythm(poem):
-    lines = poem.split()  # Разделяем стихотворение на строки
-    vowel_counts = []  # Список для хранения количеств гласных букв в каждой строке
+    lines = poem.split()
+    vowel_counts = []
 
     for line in lines:
-        words = line.split("-")  # Разделяем строку на слова
-        count = sum(count_vowels(word) for word in words)  # Подсчитываем количество гласных букв в каждом слове
-        vowel_counts.append(count)  # Добавляем количество в список
+        words = line.split("-")
+        count = sum(count_vowels(word) for word in words)
+        vowel_counts.append(count)
 
     if vowel_counts.count(vowel_counts[0]) == len(vowel_counts):
         return "Парам пам-пам"
