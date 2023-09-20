@@ -7,6 +7,11 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+<<<<<<< HEAD
+.vscode/
+project/
+=======
+>>>>>>> a1868c81e027ee89d880ab863a1eef15079ce3e8
 .Python
 build/
 develop-eggs/
